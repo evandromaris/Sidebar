@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green-bg-search-open: #8ed7c6;
+    --light-grey-bg-search-close: #dce4e3;
+    --text-color: #084236;
+    --font-family: 'Poppins', sans-serif
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+    background-color: var(--body-bg-color);
+    font: 400 0.938em var(--font-family) ;
+}
+
+header h1{
+    margin: 1.2rem 18rem;
+    color: var(--text-color);
+    font-weight: 00;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    z-index: 999;
+    background-color: var(--green);
+    width: 15.625rem;
+    height: 100vh;
+}
+
+aside .logo{
+    margin: 2rem 0 0 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside .logo #menu{
+    margin-right: 1.8rem;
+    background: none;
+    border: 0 none;
+    cursor: pointer;
+}
+
+
+aside .search-box{
+    margin: 2rem 0 0 .8rem;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0 0 1.8rem;
+}
+
+aside ul li{
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+
+}
+
+form{
+    width: 13.875rem ;
+    height: 3.125rem;
+    background-color: var(--light-green-bg-search-open);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    outline: none;
+    color: var(--text-color);
+}
+
+form ::placeholder{
+    color: var(--text-color);
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0 none;
+    margin-left: 1rem;
+    cursor: pointer;
+    
+}
+
+.search-box input{
+    background: none;
+    border: 0 none;
+    outline: none;
+}
+
+aside .profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--light-green-bg-search-open);
+    width: 15.625rem;
+    height: 3.75rem;
+    position: fixed;
+    bottom: 0rem;
+    z-index: 999;
+}
+
+.profile .img-woman{
+    width: 2.813rem;
+    height: 2.813rem;
+    background: url(images/photo.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 0.75rem;   
+}
+
+.profile section p:last-child{
+    font-size: 0.75em;
+}
+
+.profile button{
+    background: none;
+    border: 0 none;
+    cursor: pointer;
+}
+
