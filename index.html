@@ -11,56 +11,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="headerTitle">
         <h1>Dashboard</h1>
     </header>   
-    <aside>
+    <aside id="sideBar">
         <div class="logo">
-            <img src="images/logo.svg" alt="image-logo">
-            <button id="menu">
+            <img id="logoClose" src="images/logo.svg" alt="image-logo">
+            <button id="menu" onclick="sideBarclose()">
                 <img src="images/menu.svg" alt="imagem-menu">
             </button>
             
         </div>
-        <div class="search-box">
+        <div id="search-box">
             <form action="">
                 <button>
-                    <img src="images/search.svg" alt="">
+                    <img src="images/search.svg" alt="imagem-lupa">
                 </button>
                 <input 
                     type="text" 
                     placeholder="Buscar..."
                     name="serach"
+                    id="smallInput"
                 >
             </form>
         </div>
         <ul>
             <li>
-                <img src="images/grid.svg" alt="images-dashboard">
-                <p>Dashboard</p>
+                <img src="images/grid.svg" alt="image-dashboard">
+                <p class="textHidden">Dashboard</p>
             </li>
             <li>
-                <img src="images/pet.svg" alt="images-pet">
-                <p>Pet</p>
+                <img src="images/pet.svg" alt="image-pet">
+                <p class="textHidden">Pet</p>
             </li>
             <li>
                 <img src="images/user.svg" alt="image-user">
-                <p>Clientes</p>
+                <p class="textHidden">Clientes</p>
             </li>
             <li>
                 <img src="images/vet.svg" alt="image-vets">
-                <p>Vets</p>
+                <p class="textHidden">Vets</p>
             </li>
             <li>
                 <img src="images/settings.svg" alt="images-settinngs">
-                <p>Ajustes</p>
+                <p class="textHidden">Ajustes</p>
             </li>
         </ul>
-        <div class="profile">
-            <div class="img-woman"></div>
-            <section>
-                <p>Eleanor Pena</p>
-                <p>Veterinária</p>
+        <div id="profile">
+            <div id="img-woman"></div>
+            <section id="nameProfile">
+                <p class="textHidden">Eleanor Pena</p>
+                <p class="textHidden">Veterinária</p>
             </section>
             <button>
                 <img src="images/log-out.svg" alt="image-logout">
@@ -68,5 +69,7 @@
         </div>
     </aside>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
